@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  rtl-to-gds:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    container: openroad/orfs:latest          # Yosys, OpenROAD, OpenSTA, KLayout, sky130hd platform
+    steps:
+      - uses: actions/checkout@v4
+      - name: Simulators for the Verification agent
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends iverilog verilator
+      - name: Fast tests
+        run: make test
+      - name: Agent team - spec to sign-off GDS
+        run: make flow
+      - name: Sign-off criteria met
+        run: make check
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: signoff
+          path: |
+            results/summary.md
+            results/report.json
+            results/signoff/

@@ -1,0 +1,581 @@
+{
+  "design": "dot4",
+  "period_ns": 4.0,
+  "signoff": {
+    "run": 5,
+    "latency": 3,
+    "arch": "latency 3, pipeline registers after: products, mult_mid",
+    "util": 60,
+    "density": 0.65,
+    "dir": "results/runs/run05_L3_u60_d0.65",
+    "place_ws": 0.0696381,
+    "place_s": 1029,
+    "area_recovery": true,
+    "critical_path": {
+      "slack": 0.04,
+      "startpoint": "br[3][6]$_DFFE_PP_",
+      "endpoint": "phi[3][11]$_DFF_P_",
+      "levels": 11,
+      "cell_delay": 3.85,
+      "net_delay": 0.0,
+      "arrival": 4.4,
+      "required": 4.44,
+      "cells": [
+        "edfxtp_1",
+        "and2_1",
+        "fa_1",
+        "fa_1",
+        "fa_1",
+        "ha_1",
+        "fa_1",
+        "a21o_1",
+        "a21oi_1",
+        "o21ai_0",
+        "o41ai_1",
+        "xnor2_1"
+      ]
+    },
+    "route_s": 2574,
+    "drc": 0,
+    "antenna": 0,
+    "setup_ws": 0.040504,
+    "setup_tns": 0,
+    "hold_ws": 0.0665788,
+    "core_area": 28780.1,
+    "cell_area": 19566.3,
+    "utilization": 0.679854,
+    "power_mw": 8.168,
+    "artefacts": {
+      "gds": "results/signoff/dot4.gds",
+      "final_all": "results/signoff/final_all.webp",
+      "final_placement": "results/signoff/final_placement.webp",
+      "final_routing": "results/signoff/final_routing.webp",
+      "final_clocks": "results/signoff/final_clocks.webp",
+      "final_congestion": "results/signoff/final_congestion.webp"
+    }
+  },
+  "flows": 5,
+  "runs": [
+    {
+      "run": 1,
+      "latency": 1,
+      "arch": "latency 1, pipeline registers after: none",
+      "util": 50,
+      "density": 0.65,
+      "dir": "results/runs/run01_L1_u50_d0.65",
+      "synth_area": 12106.6,
+      "flops": 84,
+      "synth_s": 21,
+      "place_ws": -2.28448,
+      "place_s": 51,
+      "area_recovery": false,
+      "critical_path": {
+        "slack": -2.28,
+        "startpoint": "ar[2][7]$_DFFE_PP_",
+        "endpoint": "y[17]$_DFF_P_",
+        "levels": 15,
+        "cell_delay": 6.17,
+        "net_delay": 0.0,
+        "arrival": 6.16,
+        "required": 3.88,
+        "cells": [
+          "edfxtp_1",
+          "and2_4",
+          "fa_2",
+          "fa_2",
+          "buf_4",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "xnor2_1",
+          "xnor2_1",
+          "xnor3_2",
+          "xnor2_2",
+          "xnor2_1"
+        ]
+      }
+    },
+    {
+      "run": 2,
+      "latency": 2,
+      "arch": "latency 2, pipeline registers after: products",
+      "util": 50,
+      "density": 0.65,
+      "dir": "results/runs/run02_L2_u50_d0.65",
+      "synth_area": 13817,
+      "flops": 149,
+      "synth_s": 21,
+      "place_ws": -0.1811,
+      "place_s": 50,
+      "area_recovery": false,
+      "critical_path": {
+        "slack": -0.05,
+        "startpoint": "br[0][5]$_DFFE_PP_",
+        "endpoint": "pq[0][15]$_DFF_P_",
+        "levels": 12,
+        "cell_delay": 3.94,
+        "net_delay": 0.0,
+        "arrival": 4.38,
+        "required": 4.33,
+        "cells": [
+          "edfxtp_1",
+          "buf_4",
+          "and2_1",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "fa_2",
+          "ha_4",
+          "nor2b_1",
+          "o21ai_2",
+          "o21ai_2",
+          "o41a_1",
+          "xnor2_1"
+        ]
+      },
+      "route_s": 126,
+      "drc": 0,
+      "antenna": 0,
+      "setup_ws": -0.0530376,
+      "setup_tns": -0.0876823,
+      "hold_ws": 0.15037,
+      "core_area": 27025.9,
+      "cell_area": 17232.8,
+      "utilization": 0.637639,
+      "power_mw": 5.845
+    },
+    {
+      "run": 3,
+      "latency": 2,
+      "arch": "latency 2, pipeline registers after: products",
+      "util": 40,
+      "density": 0.55,
+      "dir": "results/runs/run03_L2_u40_d0.55",
+      "place_ws": -0.224822,
+      "place_s": 51,
+      "area_recovery": false,
+      "critical_path": {
+        "slack": -0.22,
+        "startpoint": "ar[1][3]$_DFFE_PP_",
+        "endpoint": "pq[1][14]$_DFF_P_",
+        "levels": 12,
+        "cell_delay": 4.11,
+        "net_delay": 0.0,
+        "arrival": 4.12,
+        "required": 3.9,
+        "cells": [
+          "edfxtp_1",
+          "and2_1",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "ha_1",
+          "a21o_1",
+          "a21oi_1",
+          "o211ai_1",
+          "a31o_2",
+          "a21oi_1",
+          "xnor2_1"
+        ]
+      }
+    },
+    {
+      "run": 4,
+      "latency": 3,
+      "arch": "latency 3, pipeline registers after: products, mult_mid",
+      "util": 50,
+      "density": 0.65,
+      "dir": "results/runs/run04_L3_u50_d0.65",
+      "synth_area": 17563.1,
+      "flops": 250,
+      "synth_s": 22,
+      "place_ws": 0.141259,
+      "place_s": 51,
+      "area_recovery": false,
+      "critical_path": {
+        "slack": 0.13,
+        "startpoint": "br[1][5]$_DFFE_PP_",
+        "endpoint": "phi[1][11]$_DFF_P_",
+        "levels": 11,
+        "cell_delay": 3.74,
+        "net_delay": 0.0,
+        "arrival": 4.3,
+        "required": 4.42,
+        "cells": [
+          "edfxtp_1",
+          "and2_1",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "ha_1",
+          "fa_1",
+          "a21o_1",
+          "a21oi_1",
+          "o21ai_0",
+          "o41ai_1",
+          "xnor2_1"
+        ]
+      },
+      "route_s": 3177,
+      "drc": 0,
+      "antenna": 0,
+      "setup_ws": 0.125912,
+      "setup_tns": 0,
+      "hold_ws": 0.0623824,
+      "core_area": 34543.1,
+      "cell_area": 19591.3,
+      "utilization": 0.567154,
+      "power_mw": 8.079
+    },
+    {
+      "run": 5,
+      "latency": 3,
+      "arch": "latency 3, pipeline registers after: products, mult_mid",
+      "util": 60,
+      "density": 0.65,
+      "dir": "results/runs/run05_L3_u60_d0.65",
+      "place_ws": 0.0696381,
+      "place_s": 1029,
+      "area_recovery": true,
+      "critical_path": {
+        "slack": 0.04,
+        "startpoint": "br[3][6]$_DFFE_PP_",
+        "endpoint": "phi[3][11]$_DFF_P_",
+        "levels": 11,
+        "cell_delay": 3.85,
+        "net_delay": 0.0,
+        "arrival": 4.4,
+        "required": 4.44,
+        "cells": [
+          "edfxtp_1",
+          "and2_1",
+          "fa_1",
+          "fa_1",
+          "fa_1",
+          "ha_1",
+          "fa_1",
+          "a21o_1",
+          "a21oi_1",
+          "o21ai_0",
+          "o41ai_1",
+          "xnor2_1"
+        ]
+      },
+      "route_s": 2574,
+      "drc": 0,
+      "antenna": 0,
+      "setup_ws": 0.040504,
+      "setup_tns": 0,
+      "hold_ws": 0.0665788,
+      "core_area": 28780.1,
+      "cell_area": 19566.3,
+      "utilization": 0.679854,
+      "power_mw": 8.168
+    }
+  ],
+  "verification": {
+    "rtl": "results/rtl/L3/dot4.sv",
+    "latency": 3,
+    "pass": true,
+    "stage": "sim",
+    "cycles": 6000,
+    "results_checked": 4808,
+    "errors": 0,
+    "mismatches": []
+  },
+  "messages": [
+    {
+      "n": 1,
+      "sender": "orchestrator",
+      "to": "rtl",
+      "kind": "implement",
+      "text": "implement dot4 per spec: clock 4.0 ns on sky130hd, sign-off = verified, setup/hold WNS >= 0, 0 DRC",
+      "data": {}
+    },
+    {
+      "n": 2,
+      "sender": "rtl",
+      "to": "verification",
+      "kind": "verify",
+      "text": "latency 1, pipeline registers after: none; minimum latency the spec allows (L=1); pipeline only if timing proves it necessary. Lint clean.",
+      "data": {
+        "rtl": "results/rtl/L1/dot4.sv",
+        "latency": 1
+      }
+    },
+    {
+      "n": 3,
+      "sender": "verification",
+      "to": "synthesis",
+      "kind": "synthesize",
+      "text": "PASS: 6000 cycles, 4817 results bit-exact vs the golden model (latency 1, corner operands, mid-traffic resets)",
+      "data": {
+        "rtl": "results/rtl/L1/dot4.sv"
+      }
+    },
+    {
+      "n": 4,
+      "sender": "synthesis",
+      "to": "pd",
+      "kind": "implement",
+      "text": "netlist: 834 cells, 12107 um2, 84 flops, no latches (ABC delay-oriented)",
+      "data": {}
+    },
+    {
+      "n": 5,
+      "sender": "pd",
+      "to": "timing",
+      "kind": "analyze",
+      "text": "placed (floorplan + placement): util 50 %, density 0.65; estimated setup WNS -2.28 ns",
+      "data": {
+        "stage": "place"
+      }
+    },
+    {
+      "n": 6,
+      "sender": "timing",
+      "to": "rtl",
+      "kind": "pipeline",
+      "text": "WNS -2.284 ns at 4.0 ns; worst path ar[2][7]$_DFFE_PP_ -> y[17]$_DFF_P_: 15 levels, cell 6.17 ns / net 0.00 ns (100% cell). Logic-dominated; 57% of the period, not worth routing: needs a register stage.",
+      "data": {
+        "startpoint": "ar[2][7]$_DFFE_PP_",
+        "endpoint": "y[17]$_DFF_P_",
+        "levels": 15,
+        "cell_delay": 6.17,
+        "net_delay": 0.0,
+        "wns": -2.28448
+      }
+    },
+    {
+      "n": 7,
+      "sender": "rtl",
+      "to": "verification",
+      "kind": "verify",
+      "text": "latency 2, pipeline registers after: products; timing reports a logic-dominated path ar[2][7]$_DFFE_PP_ -> y[17]$_DFF_P_ (15 levels, 6.17 ns of cell delay); adding a register stage at the cut that splits it. Lint clean.",
+      "data": {
+        "rtl": "results/rtl/L2/dot4.sv",
+        "latency": 2
+      }
+    },
+    {
+      "n": 8,
+      "sender": "verification",
+      "to": "synthesis",
+      "kind": "synthesize",
+      "text": "PASS: 6000 cycles, 4812 results bit-exact vs the golden model (latency 2, corner operands, mid-traffic resets)",
+      "data": {
+        "rtl": "results/rtl/L2/dot4.sv"
+      }
+    },
+    {
+      "n": 9,
+      "sender": "synthesis",
+      "to": "pd",
+      "kind": "implement",
+      "text": "netlist: 1064 cells, 13817 um2, 149 flops, no latches (ABC delay-oriented)",
+      "data": {}
+    },
+    {
+      "n": 10,
+      "sender": "pd",
+      "to": "timing",
+      "kind": "analyze",
+      "text": "placed (floorplan + placement): util 50 %, density 0.65; estimated setup WNS -0.18 ns",
+      "data": {
+        "stage": "place"
+      }
+    },
+    {
+      "n": 11,
+      "sender": "timing",
+      "to": "pd",
+      "kind": "route",
+      "text": "WNS -0.181 ns at 4.0 ns; worst path br[3][2]$_DFFE_PP_ -> pq[3][15]$_DFF_P_: 11 levels, cell 4.10 ns / net 0.00 ns (100% cell). Under 5 % of the period: route it and see.",
+      "data": {
+        "startpoint": "br[3][2]$_DFFE_PP_",
+        "endpoint": "pq[3][15]$_DFF_P_",
+        "levels": 11,
+        "cell_delay": 4.1,
+        "net_delay": 0.0,
+        "wns": -0.1811
+      }
+    },
+    {
+      "n": 12,
+      "sender": "pd",
+      "to": "timing",
+      "kind": "analyze",
+      "text": "routed: 0 DRC, 0 antenna nets, core 27026 um2, cell area 17233 um2",
+      "data": {
+        "stage": "finish"
+      }
+    },
+    {
+      "n": 13,
+      "sender": "timing",
+      "to": "pd",
+      "kind": "relax_placement",
+      "text": "WNS -0.053 ns at 4.0 ns; worst path br[0][5]$_DFFE_PP_ -> pq[0][15]$_DFF_P_: 12 levels, cell 3.94 ns / net 0.00 ns (100% cell). Logic-dominated but under 5 % of the period: one PD attempt first (cheaper than RTL).",
+      "data": {
+        "startpoint": "br[0][5]$_DFFE_PP_",
+        "endpoint": "pq[0][15]$_DFF_P_",
+        "levels": 12,
+        "cell_delay": 3.94,
+        "net_delay": 0.0,
+        "wns": -0.0530376
+      }
+    },
+    {
+      "n": 14,
+      "sender": "pd",
+      "to": "timing",
+      "kind": "analyze",
+      "text": "placed (small or placement-related violation: lower utilisation and density, let repair_timing work): util 40 %, density 0.55; estimated setup WNS -0.22 ns",
+      "data": {
+        "stage": "place"
+      }
+    },
+    {
+      "n": 15,
+      "sender": "timing",
+      "to": "rtl",
+      "kind": "pipeline",
+      "text": "WNS -0.225 ns at 4.0 ns; worst path ar[1][3]$_DFFE_PP_ -> pq[1][14]$_DFF_P_: 12 levels, cell 4.11 ns / net 0.00 ns (100% cell). Logic-dominated; PD's attempt did not close it: needs a register stage.",
+      "data": {
+        "startpoint": "ar[1][3]$_DFFE_PP_",
+        "endpoint": "pq[1][14]$_DFF_P_",
+        "levels": 12,
+        "cell_delay": 4.11,
+        "net_delay": 0.0,
+        "wns": -0.224822
+      }
+    },
+    {
+      "n": 16,
+      "sender": "rtl",
+      "to": "verification",
+      "kind": "verify",
+      "text": "latency 3, pipeline registers after: products, mult_mid; timing reports a logic-dominated path ar[1][3]$_DFFE_PP_ -> pq[1][14]$_DFF_P_ (12 levels, 4.11 ns of cell delay); adding a register stage at the cut that splits it. Lint clean.",
+      "data": {
+        "rtl": "results/rtl/L3/dot4.sv",
+        "latency": 3
+      }
+    },
+    {
+      "n": 17,
+      "sender": "verification",
+      "to": "synthesis",
+      "kind": "synthesize",
+      "text": "PASS: 6000 cycles, 4808 results bit-exact vs the golden model (latency 3, corner operands, mid-traffic resets)",
+      "data": {
+        "rtl": "results/rtl/L3/dot4.sv"
+      }
+    },
+    {
+      "n": 18,
+      "sender": "synthesis",
+      "to": "pd",
+      "kind": "implement",
+      "text": "netlist: 1518 cells, 17563 um2, 250 flops, no latches (ABC delay-oriented)",
+      "data": {}
+    },
+    {
+      "n": 19,
+      "sender": "pd",
+      "to": "timing",
+      "kind": "analyze",
+      "text": "placed (floorplan + placement): util 50 %, density 0.65; estimated setup WNS +0.14 ns",
+      "data": {
+        "stage": "place"
+      }
+    },
+    {
+      "n": 20,
+      "sender": "timing",
+      "to": "pd",
+      "kind": "route",
+      "text": "WNS +0.141 ns at 4.0 ns; worst path br[0][5]$_DFFE_PP_ -> phi[0][11]$_DFF_P_: 11 levels, cell 3.73 ns / net 0.00 ns (100% cell). Estimated closure; route it.",
+      "data": {}
+    },
+    {
+      "n": 21,
+      "sender": "pd",
+      "to": "timing",
+      "kind": "analyze",
+      "text": "routed: 0 DRC, 0 antenna nets, core 34543 um2, cell area 19591 um2",
+      "data": {
+        "stage": "finish"
+      }
+    },
+    {
+      "n": 22,
+      "sender": "timing",
+      "to": "orchestrator",
+      "kind": "closed",
+      "text": "WNS +0.126 ns at 4.0 ns; worst path br[1][5]$_DFFE_PP_ -> phi[1][11]$_DFF_P_: 11 levels, cell 3.74 ns / net 0.00 ns (100% cell); hold WNS +0.062 ns. Setup and hold closed after detailed routing.",
+      "data": {
+        "startpoint": "br[1][5]$_DFFE_PP_",
+        "endpoint": "phi[1][11]$_DFF_P_",
+        "levels": 11,
+        "cell_delay": 3.74,
+        "net_delay": 0.0,
+        "wns": 0.125912
+      }
+    },
+    {
+      "n": 23,
+      "sender": "orchestrator",
+      "to": "pd",
+      "kind": "area_recovery",
+      "text": "closed; try to recover area before tape-out",
+      "data": {}
+    },
+    {
+      "n": 24,
+      "sender": "pd",
+      "to": "timing",
+      "kind": "analyze",
+      "text": "placed (timing closed: try a denser floorplan to recover area): util 60 %, density 0.65; estimated setup WNS +0.07 ns",
+      "data": {
+        "stage": "place"
+      }
+    },
+    {
+      "n": 25,
+      "sender": "timing",
+      "to": "pd",
+      "kind": "route",
+      "text": "WNS +0.070 ns at 4.0 ns; worst path br[0][6]$_DFFE_PP_ -> phi[0][11]$_DFF_P_: 11 levels, cell 3.78 ns / net 0.00 ns (100% cell). Estimated closure; route it.",
+      "data": {}
+    },
+    {
+      "n": 26,
+      "sender": "pd",
+      "to": "timing",
+      "kind": "analyze",
+      "text": "routed: 0 DRC, 0 antenna nets, core 28780 um2, cell area 19566 um2",
+      "data": {
+        "stage": "finish"
+      }
+    },
+    {
+      "n": 27,
+      "sender": "timing",
+      "to": "orchestrator",
+      "kind": "closed",
+      "text": "WNS +0.041 ns at 4.0 ns; worst path br[3][6]$_DFFE_PP_ -> phi[3][11]$_DFF_P_: 11 levels, cell 3.85 ns / net 0.00 ns (100% cell); hold WNS +0.067 ns. Setup and hold closed after detailed routing.",
+      "data": {
+        "startpoint": "br[3][6]$_DFFE_PP_",
+        "endpoint": "phi[3][11]$_DFF_P_",
+        "levels": 11,
+        "cell_delay": 3.85,
+        "net_delay": 0.0,
+        "wns": 0.040504
+      }
+    }
+  ]
+}
